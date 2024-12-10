@@ -15,9 +15,19 @@
                     <hr>
                 </div>
                 <input type="hidden" name="access_key" value="64f45ab5-d807-491d-aff4-5ff2af33c285">
+                
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+                <input type="number" name="number" placeholder="Phone Number" class="contact-inputs" required oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);">
+
+                <input type="date" name="checkin" placeholder="Check-In" class="contact-inputs" required>
+
+                <input type="date" name="checkout" placeholder="Check-Out" class="contact-inputs" required>
+
+                <input type="number" name="totalamount" placeholder="Total Amount" class="contact-inputs" required> 
+
                 <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
             </form>
             <div class="contact-right">
